@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Zismo</string>
+    <string name="strdesl">Desconectar</string>
+    <string name="strview">mostrar</string>
+    <string name="strdis">DISPOSITIVOS VINCULADOS</string>
+    <string name="strdenv">Enviar</string>
+    <string name="strbutton">A</string>
+    <string name="strbutton2">Limpiar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,45 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 32
+    packagingOptions {
+        resources {
+            pickFirsts += ['META-INF/DEPENDENCIES']
+        }
+    }
+    defaultConfig {
+        applicationId "com.example.zismo"
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.example.zismo'
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation group: "com.twilio.sdk", name: "twilio", version: "8.31.1"
+    implementation group: "com.sparkjava", name: "spark-core", version: "2.7.1"
+    implementation group: "org.slf4j", name: "slf4j-simple", version: "1.7.21"
+
+}
